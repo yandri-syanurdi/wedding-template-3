@@ -1,0 +1,83 @@
+<html>
+<head><title></title>
+
+
+</head>
+<body>
+
+
+<div align="center" style="background:#000000;width:100%;height:10%;">
+<font color="white">
+JAVA SCRIPT
+</div>
+
+<div align="center" style="background:#ccc;width:10%;float:right;height:80%">
+<font color="black">
+			<a href="home.html">HOME</a><br />
+			<a href="js1.html">JAVASCRIPT1</a> <br/>
+			<a href="js2.html">JAVASCRIPT2</a><br />
+			<a href="js3.html">JAVASCRIPT3</a><br />
+</div>
+
+<div align="center" style="background:#ddd;width:100%;float:middle;height:80%">
+<font color="black">
+
+
+<script language="JavaScript" type="text/javascript">
+								
+								
+		function cek()
+		{
+		var bil = document.getElementById('b').value;
+		var status;
+		
+			if (bil < 0 || bil > 100)
+			{
+			status = "unknown";
+			}
+			else if (bil >= 80 && bil<=100)
+			{
+			status = "A";
+			}
+			else if (bil>=70 && bil<=79) {
+			status = "B"; }
+			else if (bil>=60 && bil<=69) {
+			status = "C"; }
+			else if (bil>=50 && bil<=59) {
+			status = "D"; }
+			else {
+			status = "E"; }
+			
+			document.getElementById('status').value = status;
+			
+		
+	}
+	</script>
+	<div style="text-align: center;">
+		masukan sembarang bilangan<br>
+		<input type="int" name="" id="b"><br>
+		<table align="center">
+			<tr>
+				<td>status</td>
+				<td><input type="text" name="" id="status" disabled=""></td>
+			</tr>
+			
+			<tr>
+				<td><button type="button" onclick="cek()">cek</button></td>
+				<td></td>
+			</tr>
+			</table>
+			
+		</div>
+</div>
+
+
+
+<div align="center" style="background:#000000;width:100%;height:10%;">
+<font color="white">
+
+JAVA SCRIPT &#9829;
+</div>
+
+</body>
+</html>
